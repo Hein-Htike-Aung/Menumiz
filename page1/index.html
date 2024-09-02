@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="https://via.placeholder.com/40" alt="HRHR Logo" />
+            <h2>HRHR</h2>
+        </div>
+        <ul class="nav">
+            <li class="nav-item active">
+                <a href="#"><i class="icon"></i> Dashboard</a>
+            </li>
+            <li class="nav-item">
+                <a href="#"><i class="icon"></i> Calendar</a>
+            </li>
+            <li class="nav-item">
+                <a href="#"><i class="icon"></i> Recruitment</a>
+                <span class="badge">10</span>
+            </li>
+            <li class="nav-item">
+                <a href="#"><i class="icon"></i> Employees</a>
+            </li>
+            <li class="nav-item">
+                <a href="#"><i class="icon"></i> Leave</a>
+            </li>
+            <li class="nav-item">
+                <a href="#"><i class="icon"></i> Organisation</a>
+            </li>
+            <li class="nav-item">
+                <a href="#"><i class="icon"></i> Billings</a>
+            </li>
+            <li class="nav-item">
+                <a href="#"><i class="icon"></i> Engagement</a>
+            </li>
+            <li class="nav-item">
+                <a href="#"><i class="icon"></i> Development</a>
+            </li>
+            <li class="nav-item">
+                <a href="#"><i class="icon"></i> Performance</a>
+            </li>
+            <li class="nav-item">
+                <a href="#"><i class="icon"></i> Reports</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="header">
+            <h1>Dashboard</h1>
+            <div class="search-bar">
+                <input type="text" placeholder="Enter any keyword...">
+            </div>
+            <div class="header-icons">
+                <i class="bell-icon"></i>
+                <img src="https://via.placeholder.com/40" alt="User Profile" class="profile-img">
+            </div>
+        </div>
+
+        <div class="dashboard">
+            <div class="heatmap">
+                <h2>Heatmap</h2>
+                <div class="heatmap-content">
+                    <div class="chart">
+                        <p>Sick Leave</p>
+                        <div class="circle">50%</div>
+                    </div>
+                    <div class="chart">
+                        <p>Annual Leave</p>
+                        <div class="circle">30%</div>
+                    </div>
+                    <div class="chart">
+                        <p>Emergency Leave</p>
+                        <div class="circle">20%</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="most-days-away">
+                <h2>Most Days Away</h2>
+                <ul>
+                    <li><img src="https://via.placeholder.com/40" alt="Profile"> Mark Jacobs - 5.0 day(s)</li>
+                    <li><img src="https://via.placeholder.com/40" alt="Profile"> Charlie Kristen - 3.5 day(s)</li>
+                    <li><img src="https://via.placeholder.com/40" alt="Profile"> Nur Fariha binti Maslan - 1.0 day(s)</li>
+                    <li><img src="https://via.placeholder.com/40" alt="Profile"> Nishant Talwar - 1.0 day(s)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="leave-requests">
+            <h2>Leave Requests</h2>
+            <div class="leave-tabs">
+                <button class="tab-btn active">All</button>
+                <button class="tab-btn">Approved</button>
+                <button class="tab-btn">Rejected</button>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Name</th>
+                        <th>Period</th>
+                        <th>Days</th>
+                        <th>Leave Type</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td><img src="https://via.placeholder.com/40" alt="Profile"> Mark Jacobs</td>
+                        <td>31 Mar 2023 - 31 Mar 2023</td>
+                        <td>1.0</td>
+                        <td>Annual Leave</td>
+                        <td><button class="btn-approve">Approve</button> <button class="btn-reject">Reject</button></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td><img src="https://via.placeholder.com/40" alt="Profile"> Charlie Kristen</td>
+                        <td>10 Apr 2023 - 11 Apr 2023</td>
+                        <td>2.0</td>
+                        <td>Annual Leave</td>
+                        <td><button class="btn-approve">Approve</button> <button class="btn-reject">Reject</button></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td><img src="https://via.placeholder.com/40" alt="Profile"> Nur Fariha binti Maslan</td>
+                        <td>21 Apr 2023 - 24 Apr 2023</td>
+                        <td>2.0</td>
+                        <td>Hospital Leave</td>
+                        <td><button class="btn-approve">Approve</button> <button class="btn-reject">Reject</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

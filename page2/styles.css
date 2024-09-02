@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 240px;
+    background-color: #202020;
+    padding: 20px;
+}
+
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.sidebar-header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.sidebar-nav ul {
+    list-style: none;
+}
+
+.nav-item {
+    margin-bottom: 15px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #aaa;
+    font-size: 16px;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.nav-item.active a, .nav-item a:hover {
+    background-color: #e94560;
+    color: #fff;
+}
+
+.nav-item a .notification {
+    background-color: #e94560;
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.main-content {
+    flex-grow: 1;
+    background-color: #1a1a1a;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.menu-title h1 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #333;
+    color: #aaa;
+    width: 200px;
+}
+
+.search-bar input::placeholder {
+    color: #666;
+}
+
+.settings-icon img, .user-avatar img {
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.leave-management {
+    margin-top: 20px;
+}
+
+.tabs {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.tab-btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #2a2a2a;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.tab-btn.active {
+    background-color: #e94560;
+}
+
+.leave-requests {
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.requests-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.total-requests span, .pagination span {
+    font-size: 14px;
+    color: #aaa;
+}
+
+.view-switcher .view-btn {
+    padding: 8px 15px;
+    background-color: #333;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.view-switcher .view-btn.active {
+    background-color: #e94560;
+}
+
+.pagination .pagination-btn {
+    padding: 8px 15px;
+    background-color: #333;
+    border: none;
+    color: #aaa;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pagination .pagination-btn:disabled {
+    cursor: not-allowed;
+    background-color: #444;
+}
+
+.requests-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.requests-table th, .requests-table td {
+    text-align: left;
+    padding: 15px 10px;
+}
+
+.requests-table th {
+    background-color: #333;
+    color: #aaa;
+}
+
+.requests-table td {
+    background-color: #2a2a2a;
+    color: #fff;
+    border-top: 1px solid #444;
+}
+
+.requests-table img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.btn-reject, .btn-approve {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.btn-reject {
+    background-color: #e94560;
+    color: #fff;
+}
+
+.btn-approve {
+    background-color: #333;
+    color: #fff;
+}
+
+.btn-approved {
+    background-color: #888;
+    color: #fff;
+    cursor: not-allowed;
+}
+
+.pagination, .requests-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.previous, .next {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.previous:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+}
+
+.next {
+    background-color: #e94560;
+}
+
+.requests-footer {
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.requests-footer button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.requests-footer button.approve {
+    background-color: #e94560;
+}

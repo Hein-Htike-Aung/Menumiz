@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HRHR Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">HRHR</div>
+                <div class="profile">
+                    <img src="user-avatar.png" alt="User Avatar" class="profile-img">
+                </div>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li class="nav-item active"><a href="#">Dashboard</a></li>
+                    <li class="nav-item"><a href="#">Calendar</a></li>
+                    <li class="nav-item"><a href="#">Recruitment <span class="notification">10</span></a></li>
+                    <li class="nav-item"><a href="#">Employees</a></li>
+                    <li class="nav-item"><a href="#" class="active-link">Leave</a></li>
+                    <li class="nav-item"><a href="#">Organisation</a></li>
+                    <li class="nav-item"><a href="#">Billings</a></li>
+                    <li class="nav-item"><a href="#">Engagement</a></li>
+                    <li class="nav-item"><a href="#">Development</a></li>
+                    <li class="nav-item"><a href="#">Performance</a></li>
+                    <li class="nav-item"><a href="#">Reports</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <header class="header">
+                <h1>Leave Requests</h1>
+                <div class="header-right">
+                    <input type="search" placeholder="Enter any keyword...">
+                    <img src="user-profile.png" alt="User Profile" class="user-profile">
+                </div>
+            </header>
+
+            <section class="leave-management">
+                <div class="calendar-header">
+                    <h2>April 9 - 15, 2023</h2>
+                    <div class="calendar-controls">
+                        <button>Week</button>
+                        <button>Print</button>
+                        <button>Filter</button>
+                        <button>View</button>
+                    </div>
+                </div>
+                <div class="calendar">
+                    <div class="calendar-day">Sun</div>
+                    <div class="calendar-day">Mon</div>
+                    <div class="calendar-day">Tue</div>
+                    <div class="calendar-day">Wed</div>
+                    <div class="calendar-day">Thu</div>
+                    <div class="calendar-day">Fri</div>
+                    <div class="calendar-day">Sat</div>
+                </div>
+                <div class="leave-requests">
+                    <div class="team">
+                        <h3>C-Suite</h3>
+                        <!-- Leave requests for C-Suite will go here -->
+                    </div>
+                    <div class="team">
+                        <h3>R&D</h3>
+                        <!-- Leave requests for R&D will go here -->
+                    </div>
+                    <div class="team">
+                        <h3>Creative Team</h3>
+                        <div class="leave-entry">Queenie - 40 Hrs</div>
+                        <div class="leave-entry">Simon - 40 Hrs</div>
+                        <div class="leave-entry">Ashley - 40 Hrs</div>
+                        <div class="leave-entry pending">Mark - Sick Leave (Pending Approval)</div>
+                        <div class="leave-entry">Charlie - 40 Hrs</div>
+                    </div>
+                    <div class="team">
+                        <h3>Development Team</h3>
+                        <!-- Leave requests for Development Team will go here -->
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
